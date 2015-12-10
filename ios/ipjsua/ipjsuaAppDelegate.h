@@ -19,6 +19,7 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 #import <UIKit/UIKit.h>
+#import "CallingViewController.h"
 
 @class ipjsuaViewController;
 
@@ -26,6 +27,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) ipjsuaViewController *viewController;
+@property (strong, nonatomic) CallingViewController *currentCall;
+
+//@property (strong, nonatomic) ipjsuaViewController *viewController;
 
 @end

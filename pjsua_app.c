@@ -257,6 +257,10 @@ static void on_call_state(pjsua_call_id call_id, pjsip_event *e)
 		      call_id, call_info.state_text.ptr,
 		      code, (int)reason.slen, reason.ptr));
 	} else {
+        if (call_info.state == PJSIP_INV_STATE_CONFIRMED) {
+            pjsua_call_set_vid_strm(current_call,
+                                    PJSUA_CALL_VID_STRM_ADD, NULL);
+        }
 	    PJ_LOG(3,(THIS_FILE, "Call %d state changed to %s", 
 		      call_id,
 		      call_info.state_text.ptr));

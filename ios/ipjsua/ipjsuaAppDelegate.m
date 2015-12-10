@@ -26,8 +26,6 @@
 #include "../../pjsua_app.h"
 #include "../../pjsua_app_config.h"
 
-#import "ipjsuaViewController.h"
-
 @implementation ipjsuaAppDelegate
 
 #define THIS_FILE	"ipjsuaAppDelegate.m"
@@ -43,8 +41,7 @@ static int              restartArgc;
 static void displayMsg(const char *msg)
 {
     NSString *str = [NSString stringWithFormat:@"%s", msg];
-    dispatch_async(dispatch_get_main_queue(),
-                   ^{app.viewController.textLabel.text = str;});
+    NSLog(@"%@", str);
 }
 
 static void pjsuaOnStartedCb(pj_status_t status, const char* msg)
@@ -142,19 +139,24 @@ static void pjsuaOnAppConfigCb(pjsua_app_config *cfg)
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[ipjsuaViewController alloc] initWithNibName:@"ipjsuaViewController_iPhone" bundle:nil];
-    } else {
-        self.viewController = [[ipjsuaViewController alloc] initWithNibName:@"ipjsuaViewController_iPad" bundle:nil];
-    }
-    self.window.rootViewController = self.viewController;
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+    UINavigationController *vc = [mainStoryboard instantiateInitialViewController];
+    self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     
     app = self;
     
     /* Start pjsua app thread */
     [NSThread detachNewThreadSelector:@selector(pjsuaStart) toTarget:self withObject:nil];
-
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (![defaults objectForKey:@"deviceId"]) {
+        CFUUIDRef puuid = CFUUIDCreate( nil );
+        CFStringRef strRef = CFUUIDCreateString( nil, puuid );
+        NSString *uuidString = [NSString stringWithString:(__bridge NSString * _Nonnull)(strRef)];
+        [defaults setValue:uuidString forKey:@"deviceId"];
+        [defaults synchronize];
+    }
+    
     return YES;
 }
 
@@ -261,7 +263,12 @@ pj_bool_t showNotification(pjsua_call_id call_id)
 	
 	[[UIApplication sharedApplication] presentLocalNotificationNow:alert];
     }
-    
+    if (app.currentCall == nil) {
+        UIStoryboard *callingStoryboard = [UIStoryboard storyboardWithName:@"Call" bundle:nil];
+        CallingViewController *vc = (CallingViewController *)[callingStoryboard instantiateInitialViewController];
+        vc.toSip = nil;
+        [app.window.rootViewController presentViewController:vc animated:true completion:nil];
+    }
     return PJ_FALSE;
 }
 
@@ -277,7 +284,7 @@ void displayWindow(pjsua_vid_win_id wid)
 	pjsua_vid_win_info wi;
         
         if (pjsua_vid_win_get_info(i, &wi) == PJ_SUCCESS) {
-            UIView *parent = app.viewController.view;
+            UIView *parent = app.currentCall.videoView;
             UIView *view = (__bridge UIView *)wi.hwnd.info.ios.window;
             
             if (view) {

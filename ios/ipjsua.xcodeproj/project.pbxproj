@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		065D11A81C196BC200F0C48C /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 065D11A71C196BC200F0C48C /* API.m */; };
+		065D11B51C196D1800F0C48C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 065D11AF1C196D1800F0C48C /* FirstViewController.m */; };
+		065D11B61C196D1800F0C48C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065D11B01C196D1800F0C48C /* Login.storyboard */; };
+		065D11B71C196D1800F0C48C /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 065D11B21C196D1800F0C48C /* RegisterViewController.m */; };
+		065D11B81C196D1800F0C48C /* ValueCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 065D11B41C196D1800F0C48C /* ValueCodeViewController.m */; };
+		065D11BA1C19728B00F0C48C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065D11B91C19728B00F0C48C /* Images.xcassets */; };
+		06CDC13A1C198C92003D3F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CDC1391C198C92003D3F5C /* Main.storyboard */; };
+		06CDC13D1C19A045003D3F5C /* Call.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CDC13C1C19A045003D3F5C /* Call.storyboard */; };
+		06CDC1431C19A14E003D3F5C /* CallingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CDC1421C19A14E003D3F5C /* CallingViewController.m */; };
 		06FCB44B1C195174005D8D91 /* libg7221codec-armv7-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FCB4391C195174005D8D91 /* libg7221codec-armv7-apple-darwin_ios.a */; };
 		06FCB44C1C195174005D8D91 /* libgsmcodec-armv7-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FCB43A1C195174005D8D91 /* libgsmcodec-armv7-apple-darwin_ios.a */; };
 		06FCB44D1C195174005D8D91 /* libilbccodec-armv7-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FCB43B1C195174005D8D91 /* libilbccodec-armv7-apple-darwin_ios.a */; };
@@ -53,12 +62,23 @@
 		3AF0581B16F050780046B835 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AF0581A16F050780046B835 /* Default.png */; };
 		3AF0581D16F050780046B835 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AF0581C16F050780046B835 /* Default@2x.png */; };
 		3AF0581F16F050780046B835 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AF0581E16F050780046B835 /* Default-568h@2x.png */; };
-		3AF0582216F050780046B835 /* ipjsuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF0582116F050780046B835 /* ipjsuaViewController.m */; };
-		3AF0582516F050780046B835 /* ipjsuaViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF0582316F050780046B835 /* ipjsuaViewController_iPhone.xib */; };
-		3AF0582816F050780046B835 /* ipjsuaViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF0582616F050780046B835 /* ipjsuaViewController_iPad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		065D11A61C196BC200F0C48C /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		065D11A71C196BC200F0C48C /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
+		065D11AE1C196D1800F0C48C /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		065D11AF1C196D1800F0C48C /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		065D11B01C196D1800F0C48C /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		065D11B11C196D1800F0C48C /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		065D11B21C196D1800F0C48C /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		065D11B31C196D1800F0C48C /* ValueCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueCodeViewController.h; sourceTree = "<group>"; };
+		065D11B41C196D1800F0C48C /* ValueCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueCodeViewController.m; sourceTree = "<group>"; };
+		065D11B91C19728B00F0C48C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		06CDC1391C198C92003D3F5C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		06CDC13C1C19A045003D3F5C /* Call.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Call.storyboard; sourceTree = "<group>"; };
+		06CDC1411C19A14E003D3F5C /* CallingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallingViewController.h; sourceTree = "<group>"; };
+		06CDC1421C19A14E003D3F5C /* CallingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallingViewController.m; sourceTree = "<group>"; };
 		06FCB4391C195174005D8D91 /* libg7221codec-armv7-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libg7221codec-armv7-apple-darwin_ios.a"; path = "lib/libg7221codec-armv7-apple-darwin_ios.a"; sourceTree = "<group>"; };
 		06FCB43A1C195174005D8D91 /* libgsmcodec-armv7-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgsmcodec-armv7-apple-darwin_ios.a"; path = "lib/libgsmcodec-armv7-apple-darwin_ios.a"; sourceTree = "<group>"; };
 		06FCB43B1C195174005D8D91 /* libilbccodec-armv7-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libilbccodec-armv7-apple-darwin_ios.a"; path = "lib/libilbccodec-armv7-apple-darwin_ios.a"; sourceTree = "<group>"; };
@@ -109,10 +129,6 @@
 		3AF0581A16F050780046B835 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3AF0581C16F050780046B835 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3AF0581E16F050780046B835 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		3AF0582016F050780046B835 /* ipjsuaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ipjsuaViewController.h; sourceTree = "<group>"; };
-		3AF0582116F050780046B835 /* ipjsuaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ipjsuaViewController.m; sourceTree = "<group>"; };
-		3AF0582416F050780046B835 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ipjsuaViewController_iPhone.xib; sourceTree = "<group>"; };
-		3AF0582716F050780046B835 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ipjsuaViewController_iPad.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +176,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		065D11A51C196BC200F0C48C /* mEye */ = {
+			isa = PBXGroup;
+			children = (
+				06CDC13B1C19A036003D3F5C /* Call */,
+				06CDC1381C198C7C003D3F5C /* Main */,
+				065D11AD1C196D1800F0C48C /* Login */,
+				065D11A61C196BC200F0C48C /* API.h */,
+				065D11A71C196BC200F0C48C /* API.m */,
+			);
+			path = mEye;
+			sourceTree = "<group>";
+		};
+		065D11AD1C196D1800F0C48C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				065D11AE1C196D1800F0C48C /* FirstViewController.h */,
+				065D11AF1C196D1800F0C48C /* FirstViewController.m */,
+				065D11B01C196D1800F0C48C /* Login.storyboard */,
+				065D11B11C196D1800F0C48C /* RegisterViewController.h */,
+				065D11B21C196D1800F0C48C /* RegisterViewController.m */,
+				065D11B31C196D1800F0C48C /* ValueCodeViewController.h */,
+				065D11B41C196D1800F0C48C /* ValueCodeViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		06CDC1381C198C7C003D3F5C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				06CDC1391C198C92003D3F5C /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		06CDC13B1C19A036003D3F5C /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				06CDC13C1C19A045003D3F5C /* Call.storyboard */,
+				06CDC1411C19A14E003D3F5C /* CallingViewController.h */,
+				06CDC1421C19A14E003D3F5C /* CallingViewController.m */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
 		3A92068D16F1D1A100D49F96 /* pjsua */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +235,7 @@
 		3AF057F916F050770046B835 = {
 			isa = PBXGroup;
 			children = (
+				065D11A51C196BC200F0C48C /* mEye */,
 				3AF0580E16F050770046B835 /* ipjsua */,
 				3AF0580716F050770046B835 /* Frameworks */,
 				3AF0580516F050770046B835 /* Products */,
@@ -216,10 +277,7 @@
 				3A92068D16F1D1A100D49F96 /* pjsua */,
 				3AF0581716F050780046B835 /* ipjsuaAppDelegate.h */,
 				3AF0581816F050780046B835 /* ipjsuaAppDelegate.m */,
-				3AF0582016F050780046B835 /* ipjsuaViewController.h */,
-				3AF0582116F050780046B835 /* ipjsuaViewController.m */,
-				3AF0582316F050780046B835 /* ipjsuaViewController_iPhone.xib */,
-				3AF0582616F050780046B835 /* ipjsuaViewController_iPad.xib */,
+				065D11B91C19728B00F0C48C /* Images.xcassets */,
 				3AF0580F16F050780046B835 /* Supporting Files */,
 			);
 			path = ipjsua;
@@ -299,7 +357,7 @@
 				ORGANIZATIONNAME = Teluu;
 				TargetAttributes = {
 					3AF0580316F050770046B835 = {
-						DevelopmentTeam = EMVT83BHS4;
+						DevelopmentTeam = 4VV79NCCT9;
 					};
 				};
 			};
@@ -325,12 +383,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				065D11BA1C19728B00F0C48C /* Images.xcassets in Resources */,
+				06CDC13A1C198C92003D3F5C /* Main.storyboard in Resources */,
+				065D11B61C196D1800F0C48C /* Login.storyboard in Resources */,
 				3AF0581316F050780046B835 /* InfoPlist.strings in Resources */,
+				06CDC13D1C19A045003D3F5C /* Call.storyboard in Resources */,
 				3AF0581B16F050780046B835 /* Default.png in Resources */,
 				3AF0581D16F050780046B835 /* Default@2x.png in Resources */,
 				3AF0581F16F050780046B835 /* Default-568h@2x.png in Resources */,
-				3AF0582516F050780046B835 /* ipjsuaViewController_iPhone.xib in Resources */,
-				3AF0582816F050780046B835 /* ipjsuaViewController_iPad.xib in Resources */,
 				3ADCCD171715338D0007BE8E /* pjsua.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,12 +402,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				065D11B71C196D1800F0C48C /* RegisterViewController.m in Sources */,
 				3AF0581516F050780046B835 /* main.mm in Sources */,
 				3AF0581916F050780046B835 /* ipjsuaAppDelegate.m in Sources */,
-				3AF0582216F050780046B835 /* ipjsuaViewController.m in Sources */,
+				065D11B81C196D1800F0C48C /* ValueCodeViewController.m in Sources */,
 				3ADCCD2D172E40120007BE8E /* pjsua_app_cli.c in Sources */,
 				3ADCCD2E172E40120007BE8E /* pjsua_app_common.c in Sources */,
 				3ADCCD2F172E40120007BE8E /* pjsua_app_config.c in Sources */,
+				06CDC1431C19A14E003D3F5C /* CallingViewController.m in Sources */,
+				065D11A81C196BC200F0C48C /* API.m in Sources */,
+				065D11B51C196D1800F0C48C /* FirstViewController.m in Sources */,
 				3ADCCD30172E40120007BE8E /* pjsua_app_legacy.c in Sources */,
 				3ADCCD31172E40120007BE8E /* pjsua_app.c in Sources */,
 			);
@@ -362,22 +426,6 @@
 				3AF0581216F050780046B835 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		3AF0582316F050780046B835 /* ipjsuaViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3AF0582416F050780046B835 /* en */,
-			);
-			name = ipjsuaViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		3AF0582616F050780046B835 /* ipjsuaViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3AF0582716F050780046B835 /* en */,
-			);
-			name = ipjsuaViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -437,6 +485,8 @@
 		3AF0582C16F050780046B835 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -454,7 +504,9 @@
 					"$(PROJECT_DIR)/tp-lib",
 				);
 				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = meye.yarlungsoft.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -463,6 +515,8 @@
 		3AF0582D16F050780046B835 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -479,7 +533,9 @@
 					"$(PROJECT_DIR)/tp-lib",
 				);
 				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = meye.yarlungsoft.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
