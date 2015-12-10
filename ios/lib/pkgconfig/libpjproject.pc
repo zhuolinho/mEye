@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=/usr/local/lib
+includedir=/usr/local/include
+
+Name: libpjproject
+Description: Multimedia communication library
+URL: http://www.pjsip.org
+Version: 2.4.5
+Libs: -L${libdir} -lpjsua2-armv7-apple-darwin_ios -lstdc++ -lpjsua-armv7-apple-darwin_ios -lpjsip-ua-armv7-apple-darwin_ios -lpjsip-simple-armv7-apple-darwin_ios -lpjsip-armv7-apple-darwin_ios -lpjmedia-codec-armv7-apple-darwin_ios -lpjmedia-armv7-apple-darwin_ios -lpjmedia-videodev-armv7-apple-darwin_ios -lpjmedia-audiodev-armv7-apple-darwin_ios -lpjmedia-armv7-apple-darwin_ios -lpjnath-armv7-apple-darwin_ios -lpjlib-util-armv7-apple-darwin_ios  -lsrtp-armv7-apple-darwin_ios -lresample-armv7-apple-darwin_ios -lgsmcodec-armv7-apple-darwin_ios -lspeex-armv7-apple-darwin_ios -lilbccodec-armv7-apple-darwin_ios -lg7221codec-armv7-apple-darwin_ios  -lpj-armv7-apple-darwin_ios -lyuv_neon -lyuv -lopenh264 -lstdc++ -lm -lpthread  -framework CoreAudio -framework CoreFoundation -framework AudioToolbox -framework CFNetwork -framework UIKit -framework UIKit -framework OpenGLES -framework AVFoundation -framework CoreGraphics -framework QuartzCore -framework CoreVideo -framework CoreMedia
+Cflags: -I${includedir} -I/usr/local/include -DPJ_AUTOCONF=1	-I/Users/hojolin/Documents/whitehorse/libyuv//include -I/Users/hojolin/Documents/whitehorse//include -O2 -Wno-unused-label -DPJ_SDK_NAME="iPhoneOS9.1.sdk" -arch armv7 -isysroot /Applications/XCode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1
