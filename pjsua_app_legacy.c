@@ -603,7 +603,7 @@ on_error:
 #endif /* PJSUA_HAS_VIDEO */
 
 /** UI Command **/
-static void ui_make_new_call()
+void ui_make_new_call(char *to_sip)
 {
     char buf[128];
     pjsua_msg_data msg_data;
@@ -630,7 +630,7 @@ static void ui_make_new_call()
     } else {
 	tmp.slen = 0;
     }
-
+    tmp = pj_str(to_sip);
     pjsua_msg_data_init(&msg_data);
     TEST_MULTIPART(&msg_data);
     pjsua_call_make_call(current_acc, &tmp, &call_opt, NULL,
@@ -753,10 +753,10 @@ static void ui_send_instant_message()
     }
 }
 
-static void ui_answer_call()
+void ui_answer_call()
 {
     pjsua_call_info call_info;
-    char buf[128];
+//    char buf[128];
     pjsua_msg_data msg_data;
 
     if (current_call != -1) {
@@ -776,16 +776,16 @@ static void ui_answer_call()
 	return;
 
     } else {
-	int st_code;
+	int st_code = 200;
 	char contact[120];
 	pj_str_t hname = { "Contact", 7 };
 	pj_str_t hvalue;
 	pjsip_generic_string_hdr hcontact;
 
-	if (!simple_input("Answer with code (100-699)", buf, sizeof(buf)))
-	    return;
+//	if (!simple_input("Answer with code (100-699)", buf, sizeof(buf)))
+//	    return;
 
-	st_code = my_atoi(buf);
+//	st_code = my_atoi(buf);
 	if (st_code < 100)
 	    return;
 
@@ -898,29 +898,29 @@ static void ui_add_buddy()
     }
 }
 
-static void ui_add_account(pjsua_transport_config *rtp_cfg)
+void ui_add_account(pjsua_transport_config *rtp_cfg, char *id, char *registrar, char *uname, char *passwd)
 {
-    char id[80], registrar[80], realm[80], uname[80], passwd[30];
+//    char id[80], registrar[80], realm[80], uname[80], passwd[30];
     pjsua_acc_config acc_cfg;
     pj_status_t status;
 
-    if (!simple_input("Your SIP URL:", id, sizeof(id)))
-	return;
-    if (!simple_input("URL of the registrar:", registrar, sizeof(registrar)))
-	return;
-    if (!simple_input("Auth Realm:", realm, sizeof(realm)))
-	return;
-    if (!simple_input("Auth Username:", uname, sizeof(uname)))
-	return;
-    if (!simple_input("Auth Password:", passwd, sizeof(passwd)))
-	return;
+//    if (!simple_input("Your SIP URL:", id, sizeof(id)))
+//	return;
+//    if (!simple_input("URL of the registrar:", registrar, sizeof(registrar)))
+//	return;
+//    if (!simple_input("Auth Realm:", realm, sizeof(realm)))
+//	return;
+//    if (!simple_input("Auth Username:", uname, sizeof(uname)))
+//	return;
+//    if (!simple_input("Auth Password:", passwd, sizeof(passwd)))
+//	return;
 
     pjsua_acc_config_default(&acc_cfg);
     acc_cfg.id = pj_str(id);
     acc_cfg.reg_uri = pj_str(registrar);
     acc_cfg.cred_count = 1;
     acc_cfg.cred_info[0].scheme = pj_str("Digest");
-    acc_cfg.cred_info[0].realm = pj_str(realm);
+    acc_cfg.cred_info[0].realm = pj_str("*");
     acc_cfg.cred_info[0].username = pj_str(uname);
     acc_cfg.cred_info[0].data_type = 0;
     acc_cfg.cred_info[0].data = pj_str(passwd);
@@ -1735,7 +1735,7 @@ void legacy_main()
 
 	case 'm':
 	    /* Make call! : */
-	    ui_make_new_call();
+//	    ui_make_new_call();
 	    break;
 
 	case 'M':
@@ -1777,7 +1777,7 @@ void legacy_main()
 	    if (menuin[1] == 'b') {
 		ui_add_buddy();
 	    } else if (menuin[1] == 'a') {
-		ui_add_account(&app_config.rtp_cfg);
+//		ui_add_account(&app_config.rtp_cfg);
 	    } else {
 		printf("Invalid input %s\n", menuin);
 	    }

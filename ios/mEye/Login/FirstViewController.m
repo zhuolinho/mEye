@@ -36,7 +36,6 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex != alertView.cancelButtonIndex) {
-        NSLog(@"%@ %@", [alertView textFieldAtIndex:0].text, [alertView textFieldAtIndex:1].text);
         [myAPI login:[alertView textFieldAtIndex:0].text password:[alertView textFieldAtIndex:1].text];
     }
 }

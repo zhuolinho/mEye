@@ -34,6 +34,8 @@
 		0681A0EA1C1DEF8300BCD6AE /* libilbccodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0681A0D81C1DEF8300BCD6AE /* libilbccodec.a */; };
 		0681A0EB1C1DEF8300BCD6AE /* libgsmcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0681A0D91C1DEF8300BCD6AE /* libgsmcodec.a */; };
 		0681A0EC1C1DEF8300BCD6AE /* libg7221codec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0681A0DA1C1DEF8300BCD6AE /* libg7221codec.a */; };
+		06826B001C204A93006C0284 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06826AFF1C204A93006C0284 /* MainTabBarController.m */; };
+		06826B031C20545D006C0284 /* FrdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06826B021C20545D006C0284 /* FrdTableViewController.m */; };
 		06CDC13A1C198C92003D3F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CDC1391C198C92003D3F5C /* Main.storyboard */; };
 		06CDC13D1C19A045003D3F5C /* Call.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CDC13C1C19A045003D3F5C /* Call.storyboard */; };
 		06CDC1431C19A14E003D3F5C /* CallingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CDC1421C19A14E003D3F5C /* CallingViewController.m */; };
@@ -96,6 +98,10 @@
 		0681A0D81C1DEF8300BCD6AE /* libilbccodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libilbccodec.a; path = lib/libilbccodec.a; sourceTree = "<group>"; };
 		0681A0D91C1DEF8300BCD6AE /* libgsmcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgsmcodec.a; path = lib/libgsmcodec.a; sourceTree = "<group>"; };
 		0681A0DA1C1DEF8300BCD6AE /* libg7221codec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libg7221codec.a; path = lib/libg7221codec.a; sourceTree = "<group>"; };
+		06826AFE1C204A93006C0284 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		06826AFF1C204A93006C0284 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		06826B011C20545D006C0284 /* FrdTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrdTableViewController.h; sourceTree = "<group>"; };
+		06826B021C20545D006C0284 /* FrdTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrdTableViewController.m; sourceTree = "<group>"; };
 		06CDC1391C198C92003D3F5C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		06CDC13C1C19A045003D3F5C /* Call.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Call.storyboard; sourceTree = "<group>"; };
 		06CDC1411C19A14E003D3F5C /* CallingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallingViewController.h; sourceTree = "<group>"; };
@@ -206,6 +212,10 @@
 			isa = PBXGroup;
 			children = (
 				06CDC1391C198C92003D3F5C /* Main.storyboard */,
+				06826AFE1C204A93006C0284 /* MainTabBarController.h */,
+				06826AFF1C204A93006C0284 /* MainTabBarController.m */,
+				06826B011C20545D006C0284 /* FrdTableViewController.h */,
+				06826B021C20545D006C0284 /* FrdTableViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -403,8 +413,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				065D11B71C196D1800F0C48C /* RegisterViewController.m in Sources */,
+				06826B001C204A93006C0284 /* MainTabBarController.m in Sources */,
 				3AF0581516F050780046B835 /* main.mm in Sources */,
 				3AF0581916F050780046B835 /* ipjsuaAppDelegate.m in Sources */,
+				06826B031C20545D006C0284 /* FrdTableViewController.m in Sources */,
 				065D11B81C196D1800F0C48C /* ValueCodeViewController.m in Sources */,
 				3ADCCD2D172E40120007BE8E /* pjsua_app_cli.c in Sources */,
 				3ADCCD2E172E40120007BE8E /* pjsua_app_common.c in Sources */,
@@ -496,7 +508,10 @@
 					"PJ_AUTOCONF=1",
 					USE_GUI,
 				);
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/include",
+					"$(PROJECT_DIR)/..",
+				);
 				INFOPLIST_FILE = "ipjsua/ipjsua-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
@@ -526,7 +541,10 @@
 					"PJ_AUTOCONF=1",
 					USE_GUI,
 				);
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/include",
+					"$(PROJECT_DIR)/..",
+				);
 				INFOPLIST_FILE = "ipjsua/ipjsua-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",

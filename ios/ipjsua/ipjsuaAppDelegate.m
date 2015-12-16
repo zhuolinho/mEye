@@ -139,10 +139,17 @@ static void pjsuaOnAppConfigCb(pjsua_app_config *cfg)
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
-    UINavigationController *vc = [mainStoryboard instantiateInitialViewController];
-    self.window.rootViewController = vc;
-    [self.window makeKeyAndVisible];
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    if ([ud objectForKey:@"userId"]) {
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UINavigationController *vc = [mainStoryboard instantiateInitialViewController];
+        self.window.rootViewController = vc;
+    } else {
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+        UINavigationController *vc = [mainStoryboard instantiateInitialViewController];
+        self.window.rootViewController = vc;
+    }
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timesUp) userInfo:nil repeats:NO];
     
     app = self;
     
@@ -158,6 +165,10 @@ static void pjsuaOnAppConfigCb(pjsua_app_config *cfg)
     }
     
     return YES;
+}
+
+- (void)timesUp {
+    [self.window makeKeyAndVisible];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
