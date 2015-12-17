@@ -302,7 +302,7 @@ static void vid_show_help()
     puts("+=============================================================================+");
 }
 
-static void vid_handle_menu(char *menuin)
+void vid_handle_menu(char *menuin)
 {
     char *argv[8];
     int argc = 0;

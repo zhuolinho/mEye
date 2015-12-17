@@ -12,6 +12,7 @@
 void pjsua_call_hangup_all();
 void ui_answer_call();
 void ui_make_new_call(char *to_sip);
+void vid_handle_menu(char *menuin);
 
 @interface CallingViewController ()
 
@@ -20,6 +21,16 @@ void ui_make_new_call(char *to_sip);
 @implementation CallingViewController
 - (IBAction)hangup:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)capSwitch:(UISwitch *)sender {
+    if (sender.on) {
+        
+        char menuin[80] = "vid call cap -1 3";
+        vid_handle_menu(menuin);
+    } else {
+        char menuin[80] = "vid call cap -1 -1";
+        vid_handle_menu(menuin);
+    }
 }
 
 - (void)viewDidLoad {
