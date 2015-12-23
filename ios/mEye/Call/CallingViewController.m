@@ -24,7 +24,6 @@ void vid_handle_menu(char *menuin);
 }
 - (IBAction)capSwitch:(UISwitch *)sender {
     if (sender.on) {
-        
         char menuin[80] = "vid call cap -1 3";
         vid_handle_menu(menuin);
     } else {
@@ -55,7 +54,7 @@ void vid_handle_menu(char *menuin);
         NSLog(@"%s", to_sip);
         ui_make_new_call(to_sip);
     } else {
-        ui_answer_call();
+//        ui_answer_call();
     }
 }
 

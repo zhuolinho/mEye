@@ -149,7 +149,7 @@ static void pjsuaOnAppConfigCb(pjsua_app_config *cfg)
         UINavigationController *vc = [mainStoryboard instantiateInitialViewController];
         self.window.rootViewController = vc;
     }
-    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(timesUp) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(timesUp) userInfo:nil repeats:NO];
     
     app = self;
     

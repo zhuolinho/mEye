@@ -22,6 +22,10 @@
 - (IBAction)nextButtonClick:(id)sender {
     [myAPI registerAccount:_phoneTF.text];
 }
+- (IBAction)viewTouch:(id)sender {
+    [_passwordTF resignFirstResponder];
+    [_phoneTF resignFirstResponder];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

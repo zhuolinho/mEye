@@ -23,8 +23,10 @@ void ui_add_account(pjsua_transport_config *rtp_cfg, char *registrar, char *id, 
     char registrar[80] = "sip:";
     char userId[80] = "sip:";
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    NSString *userName = [ud objectForKey:@"userName"];
-    NSString *password = [ud objectForKey:@"password"];
+//    NSString *userName = [ud objectForKey:@"userName"];
+//    NSString *password = [ud objectForKey:@"password"];
+    NSString *userName = @"9007";
+    NSString *password = @"p9007";
     NSString *serviceUrl = [ud objectForKey:@"serviceUrl"];
     strcat(registrar, [serviceUrl UTF8String]);
     strcat(userId, [userName UTF8String]);
@@ -36,7 +38,7 @@ void ui_add_account(pjsua_transport_config *rtp_cfg, char *registrar, char *id, 
     {
         pj_thread_register(NULL, desc, &thread);
     }
-    ui_add_account(&app_config.rtp_cfg, registrar, userId, [userName UTF8String], [password UTF8String]);
+    ui_add_account(&app_config.rtp_cfg, userId, registrar, [userName UTF8String], [password UTF8String]);
 }
 
 - (void)didReceiveMemoryWarning {

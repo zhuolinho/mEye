@@ -519,7 +519,7 @@
 					"$(PROJECT_DIR)/tp-lib",
 					"$(PROJECT_DIR)/armv7",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = meye.yarlungsoft.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -552,7 +552,7 @@
 					"$(PROJECT_DIR)/tp-lib",
 					"$(PROJECT_DIR)/armv7",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = meye.yarlungsoft.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
