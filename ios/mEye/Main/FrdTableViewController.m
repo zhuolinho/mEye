@@ -10,6 +10,7 @@
 #import "CallingViewController.h"
 
 @interface FrdTableViewController () <UIAlertViewDelegate>
+@property (weak, nonatomic) IBOutlet UISegmentedControl *videoSegment;
 
 @end
 
@@ -18,6 +19,11 @@
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"拨打号码" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"呼叫", nil];
     alert.alertViewStyle = UIAlertViewStylePlainTextInput;
     [alert show];
+}
+- (IBAction)segmentChange:(UISegmentedControl *)sender {
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    [ud setObject:[NSString stringWithFormat:@"%ld", (long)sender.selectedSegmentIndex] forKey:@"videoStatus"];
+    [ud synchronize];
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
@@ -31,7 +37,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    _videoSegment.selectedSegmentIndex = [[ud objectForKey:@"videoStatus"]intValue];
+//    NSLog(@"%@",[ud objectForKey:@"videoStatus"]);
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

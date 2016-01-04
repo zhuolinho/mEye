@@ -42,11 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../pjsua_app.c"
-            timestampString = "472199800.736796"
+            timestampString = "472744573.522967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1911"
-            endingLineNumber = "1911">
+            startingLineNumber = "1915"
+            endingLineNumber = "1915"
+            landmarkName = "pjsua_app_init()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -56,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../pjsua_app.c"
-            timestampString = "472199800.736796"
+            timestampString = "472744573.522967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1910"
-            endingLineNumber = "1910"
+            startingLineNumber = "1914"
+            endingLineNumber = "1914"
             landmarkName = "pjsua_app_init()"
             landmarkType = "7">
          </BreakpointContent>
@@ -152,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ipjsua/ipjsuaAppDelegate.m"
-            timestampString = "472122715.315397"
+            timestampString = "472636035.468385"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "291"
@@ -168,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../pjsua_app.c"
-            timestampString = "472199800.736796"
+            timestampString = "472744573.522967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "614"
-            endingLineNumber = "614"
+            startingLineNumber = "618"
+            endingLineNumber = "618"
             landmarkName = "on_call_media_state()"
             landmarkType = "7">
          </BreakpointContent>
@@ -216,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../pjsua_app.c"
-            timestampString = "472199800.736796"
+            timestampString = "472744573.522967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "312"
-            endingLineNumber = "312"
+            startingLineNumber = "316"
+            endingLineNumber = "316"
             landmarkName = "on_incoming_call()"
             landmarkType = "7">
          </BreakpointContent>
@@ -238,6 +240,118 @@
             startingLineNumber = "814"
             endingLineNumber = "814"
             landmarkName = "ui_answer_call()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ipjsua/ipjsuaAppDelegate.m"
+            timestampString = "472637963.137622"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "305"
+            endingLineNumber = "305"
+            landmarkName = "displayWindow()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "displayWindow"
+                  moduleName = "ipjsua"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hojolin/Desktop/mEye/ios/ipjsua/ipjsuaAppDelegate.m"
+                  timestampString = "472636366.257738"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__displayWindow_block_invoke"
+                  moduleName = "ipjsua"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hojolin/Desktop/mEye/ios/ipjsua/ipjsuaAppDelegate.m"
+                  timestampString = "472636366.258234"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ipjsua/ipjsuaAppDelegate.m"
+            timestampString = "472637963.137622"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "312"
+            endingLineNumber = "312"
+            landmarkName = "displayWindow()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ipjsua/ipjsuaAppDelegate.m"
+            timestampString = "472637963.137622"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "310"
+            endingLineNumber = "310"
+            landmarkName = "displayWindow()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mEye/Call/CallingViewController.m"
+            timestampString = "472742907.793055"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "-timesup"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ipjsua/ipjsuaAppDelegate.m"
+            timestampString = "472744050.610709"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "332"
+            endingLineNumber = "332"
+            landmarkName = "displayWindow()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

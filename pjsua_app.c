@@ -48,6 +48,8 @@ static void stereo_demo();
 
 #ifdef USE_GUI
 pj_bool_t showNotification(pjsua_call_id call_id);
+void endCall();
+void vid_handle_menu(char *menuin);
 #endif
 
 static void ringback_start(pjsua_call_id call_id);
@@ -210,10 +212,11 @@ static void on_call_state(pjsua_call_id call_id, pjsip_event *e)
 		      "Call %d disconnected, dumping media stats..", 
 		      call_id));
 	    log_call_dump(call_id);
+        endCall();
 	}
 
     } else {
-
+        
 	if (app_config.duration != PJSUA_APP_NO_LIMIT_DURATION && 
 	    call_info.state == PJSIP_INV_STATE_CONFIRMED) 
 	{
@@ -257,16 +260,18 @@ static void on_call_state(pjsua_call_id call_id, pjsip_event *e)
 		      call_id, call_info.state_text.ptr,
 		      code, (int)reason.slen, reason.ptr));
 	} else {
-//        if (call_info.state == PJSIP_INV_STATE_CONFIRMED) {
-//            if (call_info.rem_offerer && call_info.rem_vid_cnt)
-//            {
-//                int vid_idx;
-//                vid_idx = pjsua_call_get_vid_stream_idx(call_id);
-//                if (vid_idx == -1 || call_info.media[vid_idx].dir == PJMEDIA_DIR_NONE) {
-//                    pjsua_call_set_vid_strm(current_call, PJSUA_CALL_VID_STRM_ADD, NULL);
-//                }
-//            }
-//        }
+        if (call_info.state == PJSIP_INV_STATE_CONFIRMED) {
+            char menuin[80] = "vid win show 1";
+            vid_handle_menu(menuin);
+            if (call_info.rem_offerer && call_info.rem_vid_cnt)
+            {
+                int vid_idx;
+                vid_idx = pjsua_call_get_vid_stream_idx(call_id);
+                if (vid_idx == -1 || call_info.media[vid_idx].dir == PJMEDIA_DIR_NONE) {
+                    pjsua_call_set_vid_strm(current_call, PJSUA_CALL_VID_STRM_ADD, NULL);
+                }
+            }
+        }
 	    PJ_LOG(3,(THIS_FILE, "Call %d state changed to %s",
 		      call_id,
 		      call_info.state_text.ptr));

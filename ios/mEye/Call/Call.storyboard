@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hgm-NH-ru7">
-                                <rect key="frame" x="0.0" y="28" width="320" height="240"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hgm-NH-ru7">
+                                <rect key="frame" x="0.0" y="28" width="320" height="428"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lde-rE-yVm">
@@ -28,27 +28,32 @@
                                     <action selector="hangup:" destination="PSR-Cn-fvs" eventType="touchUpInside" id="bun-ZE-TG2"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wPB-hY-2ZT">
-                                <rect key="frame" x="135" y="464" width="51" height="31"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KGf-qF-AiY">
+                                <rect key="frame" x="0.0" y="464" width="124" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="Ret-K3-Yp0"/>
+                                    <constraint firstAttribute="height" constant="104" id="voE-WV-FU1"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ck-1s-4KM">
+                                <rect key="frame" x="251" y="465" width="49" height="30"/>
+                                <state key="normal" title="answer"/>
                                 <connections>
-                                    <action selector="capSwitch:" destination="PSR-Cn-fvs" eventType="valueChanged" id="8Yo-Ep-tyS"/>
+                                    <action selector="answerButtonClick:" destination="PSR-Cn-fvs" eventType="touchUpInside" id="cgb-2z-DtI"/>
                                 </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="摄像头" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m17-QY-2G4">
-                                <rect key="frame" x="134" y="503" width="51" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Weg-30-avd" firstAttribute="top" secondItem="m17-QY-2G4" secondAttribute="bottom" constant="44" id="DHr-6P-PiF"/>
+                            <constraint firstItem="Hgm-NH-ru7" firstAttribute="top" secondItem="oZ2-Fz-Sjc" secondAttribute="bottom" constant="8" id="Frg-ya-xGU"/>
                             <constraint firstItem="Weg-30-avd" firstAttribute="top" secondItem="lde-rE-yVm" secondAttribute="bottom" constant="20" id="kaP-jy-Cck"/>
-                            <constraint firstItem="m17-QY-2G4" firstAttribute="top" secondItem="wPB-hY-2ZT" secondAttribute="bottom" constant="8" id="ufP-hd-zc5"/>
+                            <constraint firstItem="Weg-30-avd" firstAttribute="top" secondItem="KGf-qF-AiY" secondAttribute="bottom" id="tL7-1P-7tg"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="answerButton" destination="9ck-1s-4KM" id="uD4-ZN-4UT"/>
+                        <outlet property="myView" destination="KGf-qF-AiY" id="r7T-84-222"/>
                         <outlet property="videoView" destination="Hgm-NH-ru7" id="z4h-Ny-VZI"/>
                     </connections>
                 </viewController>

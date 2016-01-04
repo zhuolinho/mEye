@@ -287,45 +287,75 @@ void displayWindow(pjsua_vid_win_id wid)
 {
 #if PJSUA_HAS_VIDEO
     int i, last;
-    
+    printf("qwerty%d", wid);
     i = (wid == PJSUA_INVALID_ID) ? 0 : wid;
     last = (wid == PJSUA_INVALID_ID) ? PJSUA_MAX_VID_WINS : wid+1;
 
     for (;i < last; ++i) {
 	pjsua_vid_win_info wi;
-        
         if (pjsua_vid_win_get_info(i, &wi) == PJ_SUCCESS) {
-            UIView *parent = app.currentCall.videoView;
+            UIView *parent = app.currentCall.myView;
+            if (!wi.is_native) {
+                parent = app.currentCall.videoView;
+            }
             UIView *view = (__bridge UIView *)wi.hwnd.info.ios.window;
             
             if (view) {
+                if (!wi.is_native) {
                 dispatch_async(dispatch_get_main_queue(), ^{
                     /* Add the video window as subview */
                     if (![view isDescendantOfView:parent])
                         [parent addSubview:view];
                     
-                    if (!wi.is_native) {
+//                    if (!wi.is_native || wi.is_native) {
                         /* Resize it to fit width */
                         view.bounds = CGRectMake(0, 0, parent.bounds.size.width,
-                                                 (parent.bounds.size.height *
+                                                 (view.bounds.size.height *
                                                   1.0*parent.bounds.size.width/
                                                   view.bounds.size.width));
                         /* Center it horizontally */
                         view.center = CGPointMake(parent.bounds.size.width/2.0,
                                               view.bounds.size.height/2.0);
-                    } else {
-                        /* Preview window, move it to the bottom */
-                        view.center = CGPointMake(parent.bounds.size.width/2.0,
-                                                  parent.bounds.size.height-
-                                                  view.bounds.size.height/2.0);
-                    }
+//                    } else {
+//                        /* Preview window, move it to the bottom */
+//                        view.center = CGPointMake(parent.bounds.size.width/2.0,
+//                                                  parent.bounds.size.height-
+//                                                  view.bounds.size.height/2.0);
+//                    }
                 });
+                } else {
+                    static pj_thread_desc a_thread_desc;
+                    static pj_thread_t *a_thread;
+                    if (!pj_thread_is_registered()) {
+                        pj_thread_register("ipjsua", a_thread_desc, &a_thread);
+                    }
+                    if (![view isDescendantOfView:parent])
+                        [parent addSubview:view];
+                    
+                    //                    if (!wi.is_native || wi.is_native) {
+                    /* Resize it to fit width */
+                    view.bounds = CGRectMake(0, 0, parent.bounds.size.width,
+                                             (view.bounds.size.height *
+                                              1.0*parent.bounds.size.width/
+                                              view.bounds.size.width));
+                    /* Center it horizontally */
+                    view.center = CGPointMake(parent.bounds.size.width/2.0,
+                                              view.bounds.size.height/2.0);
+                }
             }
         }
     }
 
     
 #endif
+}
+
+void endCall() {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"通话结束" message:nil delegate:app.currentCall cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        [alert show];
+//        [app.currentCall dismissViewControllerAnimated:YES completion:nil];
+    });
 }
 
 @end

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CallingViewController : UIViewController
+@interface CallingViewController : UIViewController <UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UIView *videoView;
 @property NSString *toSip;
+@property (weak, nonatomic) IBOutlet UIView *myView;
 
 @end
