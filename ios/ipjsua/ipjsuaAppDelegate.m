@@ -22,6 +22,7 @@
 #import <pjlib.h>
 #import <pjsua.h>
 #import <pj/log.h>
+#import "APService.h"
 
 #include "../../pjsua_app.h"
 #include "../../pjsua_app_config.h"
@@ -164,6 +165,12 @@ static void pjsuaOnAppConfigCb(pjsua_app_config *cfg)
         [defaults synchronize];
     }
     
+    [APService registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
+                                                   UIRemoteNotificationTypeSound |
+                                                   UIRemoteNotificationTypeAlert)
+                                       categories:nil];
+    [APService setupWithOption:launchOptions];
+    
     return YES;
 }
 
@@ -245,6 +252,8 @@ static void pjsuaOnAppConfigCb(pjsua_app_config *cfg)
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    [application setApplicationIconBadgeNumber:0];
+    [application cancelAllLocalNotifications];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -356,6 +365,23 @@ void endCall() {
         [alert show];
 //        [app.currentCall dismissViewControllerAnimated:YES completion:nil];
     });
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    [APService registerDeviceToken:deviceToken];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog(@"did Fail To Register For Remote Notifications With Error: %@", error);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [APService handleRemoteNotification:userInfo];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler: (void (^)(UIBackgroundFetchResult))completionHandler {
+    [APService handleRemoteNotification:userInfo];
+    completionHandler(UIBackgroundFetchResultNewData);
 }
 
 @end

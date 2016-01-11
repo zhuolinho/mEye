@@ -62,7 +62,7 @@ void vid_handle_menu(char *menuin);
         NSLog(@"%s", to_sip);
         ui_make_new_call(to_sip);
         _answerButton.hidden = YES;
-        [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(showSelf) userInfo:nil repeats:NO];
+//        [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(showSelf) userInfo:nil repeats:NO];
 //        [NSTimer scheduledTimerWithTimeInterval:15 target:self selector:@selector(timesup) userInfo:nil repeats:NO];
     } else {
         NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];

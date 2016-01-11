@@ -36,6 +36,13 @@
 		0681A0EC1C1DEF8300BCD6AE /* libg7221codec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0681A0DA1C1DEF8300BCD6AE /* libg7221codec.a */; };
 		06826B001C204A93006C0284 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06826AFF1C204A93006C0284 /* MainTabBarController.m */; };
 		06826B031C20545D006C0284 /* FrdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06826B021C20545D006C0284 /* FrdTableViewController.m */; };
+		06AE7CDA1C3FF1E2006B3ACE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AE7CD91C3FF1E2006B3ACE /* CoreTelephony.framework */; };
+		06AE7CDC1C3FF1F0006B3ACE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AE7CDB1C3FF1F0006B3ACE /* SystemConfiguration.framework */; };
+		06AE7CDE1C3FF217006B3ACE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AE7CDD1C3FF217006B3ACE /* Security.framework */; };
+		06AE7CE01C3FF225006B3ACE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AE7CDF1C3FF225006B3ACE /* libz.tbd */; };
+		06B341681C3FF006004E9F3D /* libPushSDK-1.8.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B341651C3FF006004E9F3D /* libPushSDK-1.8.5.a */; };
+		06B341691C3FF006004E9F3D /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06B341661C3FF006004E9F3D /* PushConfig.plist */; };
+		06B3416A1C3FF006004E9F3D /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 06B341671C3FF006004E9F3D /* sound.caf */; };
 		06CDC13A1C198C92003D3F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CDC1391C198C92003D3F5C /* Main.storyboard */; };
 		06CDC13D1C19A045003D3F5C /* Call.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CDC13C1C19A045003D3F5C /* Call.storyboard */; };
 		06CDC1431C19A14E003D3F5C /* CallingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CDC1421C19A14E003D3F5C /* CallingViewController.m */; };
@@ -102,6 +109,14 @@
 		06826AFF1C204A93006C0284 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		06826B011C20545D006C0284 /* FrdTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrdTableViewController.h; sourceTree = "<group>"; };
 		06826B021C20545D006C0284 /* FrdTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrdTableViewController.m; sourceTree = "<group>"; };
+		06AE7CD91C3FF1E2006B3ACE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		06AE7CDB1C3FF1F0006B3ACE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		06AE7CDD1C3FF217006B3ACE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		06AE7CDF1C3FF225006B3ACE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		06B341641C3FF006004E9F3D /* APService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APService.h; sourceTree = "<group>"; };
+		06B341651C3FF006004E9F3D /* libPushSDK-1.8.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPushSDK-1.8.5.a"; sourceTree = "<group>"; };
+		06B341661C3FF006004E9F3D /* PushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PushConfig.plist; sourceTree = "<group>"; };
+		06B341671C3FF006004E9F3D /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
 		06CDC1391C198C92003D3F5C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		06CDC13C1C19A045003D3F5C /* Call.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Call.storyboard; sourceTree = "<group>"; };
 		06CDC1411C19A14E003D3F5C /* CallingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallingViewController.h; sourceTree = "<group>"; };
@@ -142,6 +157,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06AE7CE01C3FF225006B3ACE /* libz.tbd in Frameworks */,
+				06AE7CDE1C3FF217006B3ACE /* Security.framework in Frameworks */,
+				3AA3200118F3FB4C00112C3D /* CoreGraphics.framework in Frameworks */,
+				06AE7CDC1C3FF1F0006B3ACE /* SystemConfiguration.framework in Frameworks */,
+				06AE7CDA1C3FF1E2006B3ACE /* CoreTelephony.framework in Frameworks */,
+				06B341681C3FF006004E9F3D /* libPushSDK-1.8.5.a in Frameworks */,
 				3AA31FF818F3FB4C00112C3D /* CFNetwork.framework in Frameworks */,
 				3AA31FFB18F3FB4C00112C3D /* CoreImage.framework in Frameworks */,
 				0681A0E41C1DEF8300BCD6AE /* libpjmedia-videodev.a in Frameworks */,
@@ -163,7 +184,6 @@
 				0681A0DE1C1DEF8300BCD6AE /* libpjsua2.a in Frameworks */,
 				0681A0DF1C1DEF8300BCD6AE /* libpjsua.a in Frameworks */,
 				0681A0DB1C1DEF8300BCD6AE /* libsrtp.a in Frameworks */,
-				3AA3200118F3FB4C00112C3D /* CoreGraphics.framework in Frameworks */,
 				0681A0E21C1DEF8300BCD6AE /* libpjsip.a in Frameworks */,
 				0681A0E11C1DEF8300BCD6AE /* libpjsip-simple.a in Frameworks */,
 				06712FA21C1DE8660067E6CB /* libyuv_neon.a in Frameworks */,
@@ -208,6 +228,17 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		06B341631C3FF006004E9F3D /* jpush */ = {
+			isa = PBXGroup;
+			children = (
+				06B341641C3FF006004E9F3D /* APService.h */,
+				06B341651C3FF006004E9F3D /* libPushSDK-1.8.5.a */,
+				06B341661C3FF006004E9F3D /* PushConfig.plist */,
+				06B341671C3FF006004E9F3D /* sound.caf */,
+			);
+			path = jpush;
+			sourceTree = "<group>";
+		};
 		06CDC1381C198C7C003D3F5C /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +276,7 @@
 		3AF057F916F050770046B835 = {
 			isa = PBXGroup;
 			children = (
+				06B341631C3FF006004E9F3D /* jpush */,
 				065D11A51C196BC200F0C48C /* mEye */,
 				3AF0580E16F050770046B835 /* ipjsua */,
 				3AF0580716F050770046B835 /* Frameworks */,
@@ -264,6 +296,10 @@
 		3AF0580716F050770046B835 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				06AE7CDF1C3FF225006B3ACE /* libz.tbd */,
+				06AE7CDD1C3FF217006B3ACE /* Security.framework */,
+				06AE7CDB1C3FF1F0006B3ACE /* SystemConfiguration.framework */,
+				06AE7CD91C3FF1E2006B3ACE /* CoreTelephony.framework */,
 				3AA31FE918F3FB4C00112C3D /* AudioToolbox.framework */,
 				3AA31FEA18F3FB4C00112C3D /* AVFoundation.framework */,
 				3AA31FEB18F3FB4C00112C3D /* CFNetwork.framework */,
@@ -397,10 +433,12 @@
 				06CDC13A1C198C92003D3F5C /* Main.storyboard in Resources */,
 				065D11B61C196D1800F0C48C /* Login.storyboard in Resources */,
 				3AF0581316F050780046B835 /* InfoPlist.strings in Resources */,
+				06B341691C3FF006004E9F3D /* PushConfig.plist in Resources */,
 				06CDC13D1C19A045003D3F5C /* Call.storyboard in Resources */,
 				3AF0581B16F050780046B835 /* Default.png in Resources */,
 				3AF0581D16F050780046B835 /* Default@2x.png in Resources */,
 				3AF0581F16F050780046B835 /* Default-568h@2x.png in Resources */,
+				06B3416A1C3FF006004E9F3D /* sound.caf in Resources */,
 				3ADCCD171715338D0007BE8E /* pjsua.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,9 +555,9 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/lib",
 					"$(PROJECT_DIR)/tp-lib",
-					"$(PROJECT_DIR)/armv7",
+					"$(PROJECT_DIR)/jpush",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = meye.yarlungsoft.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -550,7 +588,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/lib",
 					"$(PROJECT_DIR)/tp-lib",
-					"$(PROJECT_DIR)/armv7",
+					"$(PROJECT_DIR)/jpush",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = meye.yarlungsoft.com;

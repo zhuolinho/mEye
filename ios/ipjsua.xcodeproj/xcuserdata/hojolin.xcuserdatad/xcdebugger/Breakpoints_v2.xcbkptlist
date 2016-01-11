@@ -15,8 +15,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "264"
             endingLineNumber = "264"
-            landmarkName = "showNotification()"
-            landmarkType = "7">
+            landmarkName = "-applicationWillTerminate:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -31,8 +31,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "265"
             endingLineNumber = "265"
-            landmarkName = "showNotification()"
-            landmarkType = "7">
+            landmarkName = "-applicationWillTerminate:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -159,7 +159,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "291"
             endingLineNumber = "291"
-            landmarkName = "displayWindow()"
+            landmarkName = "showNotification()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -353,6 +353,22 @@
             endingLineNumber = "332"
             landmarkName = "displayWindow()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mEye/Main/MainTabBarController.m"
+            timestampString = "474213736.591756"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

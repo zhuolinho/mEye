@@ -8,6 +8,7 @@
 
 #import "MainTabBarController.h"
 #include "pjsua_app_common.h"
+#import "APService.h"
 
 void ui_add_account(pjsua_transport_config *rtp_cfg, char *registrar, char *id, char *uname, char *passwd);
 
@@ -25,6 +26,7 @@ void ui_add_account(pjsua_transport_config *rtp_cfg, char *registrar, char *id, 
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     NSString *userName = [ud objectForKey:@"userName"];
     NSString *password = [ud objectForKey:@"password"];
+    [APService setAlias:userName callbackSelector:nil object:nil];
 //    NSString *userName = @"9007";
 //    NSString *password = @"p9007";
     NSString *serviceUrl = [ud objectForKey:@"serviceUrl"];
