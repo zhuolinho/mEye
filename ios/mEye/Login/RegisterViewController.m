@@ -31,6 +31,7 @@
     [super viewDidLoad];
     myAPI = [[API alloc]init];
     myAPI.delegate = self;
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     // Do any additional setup after loading the view.
 }
 

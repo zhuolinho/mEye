@@ -46,6 +46,7 @@
 		06CDC13A1C198C92003D3F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CDC1391C198C92003D3F5C /* Main.storyboard */; };
 		06CDC13D1C19A045003D3F5C /* Call.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CDC13C1C19A045003D3F5C /* Call.storyboard */; };
 		06CDC1431C19A14E003D3F5C /* CallingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CDC1421C19A14E003D3F5C /* CallingViewController.m */; };
+		06F2E9891C5B88D400B0467F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F2E9881C5B88D400B0467F /* LoginViewController.m */; };
 		3AA31FF618F3FB4C00112C3D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA31FE918F3FB4C00112C3D /* AudioToolbox.framework */; };
 		3AA31FF718F3FB4C00112C3D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA31FEA18F3FB4C00112C3D /* AVFoundation.framework */; };
 		3AA31FF818F3FB4C00112C3D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA31FEB18F3FB4C00112C3D /* CFNetwork.framework */; };
@@ -121,6 +122,8 @@
 		06CDC13C1C19A045003D3F5C /* Call.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Call.storyboard; sourceTree = "<group>"; };
 		06CDC1411C19A14E003D3F5C /* CallingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallingViewController.h; sourceTree = "<group>"; };
 		06CDC1421C19A14E003D3F5C /* CallingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallingViewController.m; sourceTree = "<group>"; };
+		06F2E9871C5B88D400B0467F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		06F2E9881C5B88D400B0467F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		3AA31FE918F3FB4C00112C3D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		3AA31FEA18F3FB4C00112C3D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3AA31FEB18F3FB4C00112C3D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -217,6 +220,8 @@
 		065D11AD1C196D1800F0C48C /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				06F2E9871C5B88D400B0467F /* LoginViewController.h */,
+				06F2E9881C5B88D400B0467F /* LoginViewController.m */,
 				065D11AE1C196D1800F0C48C /* FirstViewController.h */,
 				065D11AF1C196D1800F0C48C /* FirstViewController.m */,
 				065D11B01C196D1800F0C48C /* Login.storyboard */,
@@ -464,6 +469,7 @@
 				065D11B51C196D1800F0C48C /* FirstViewController.m in Sources */,
 				3ADCCD30172E40120007BE8E /* pjsua_app_legacy.c in Sources */,
 				3ADCCD31172E40120007BE8E /* pjsua_app.c in Sources */,
+				06F2E9891C5B88D400B0467F /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

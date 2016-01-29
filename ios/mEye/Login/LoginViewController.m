@@ -1,37 +1,33 @@
 //
-//  FirstViewController.m
-//  GoodLuck
+//  LoginViewController.m
+//  ipjsua
 //
-//  Created by HoJolin on 15/12/8.
-//
+//  Created by JuZhen on 16/1/16.
+//  Copyright © 2016年 Teluu. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "LoginViewController.h"
 #import "API.h"
 
-@interface FirstViewController () <UIAlertViewDelegate, APIProtocol> {
+
+@interface LoginViewController ()<APIProtocol> {
     API *myAPI;
 }
 
+
+@property (weak, nonatomic) IBOutlet UITextField *phoneNumber;
+@property (weak, nonatomic) IBOutlet UITextField *password;
+
 @end
 
-@implementation FirstViewController
-- (IBAction)loginButtonClick:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"用户登录" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"登录", nil];
-    alert.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;
-//    [alert show];
-}
+@implementation LoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     myAPI = [[API alloc]init];
     myAPI.delegate = self;
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     // Do any additional setup after loading the view.
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,17 +35,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    if (buttonIndex != alertView.cancelButtonIndex) {
-        [myAPI login:[alertView textFieldAtIndex:0].text password:[alertView textFieldAtIndex:1].text];
-    }
+- (IBAction)LoginBottonPress:(id)sender {
+    NSLog(@"login button pressed");
+    [myAPI login:_phoneNumber.text password: _password.text];
+}
+- (IBAction)viewTouch:(id)sender {
+    [_phoneNumber resignFirstResponder];
+    [_password resignFirstResponder];
 }
 
-- (void)didReceiveAPIErrorOf:(API *)api data:(int)errorNo {
-    NSLog(@"%d", errorNo);
-}
-
-- (void)didReceiveAPIResponseOf:(API *)api data:(NSDictionary *)data {
+- (void)didReceiveAPIResponseOf: (API *)api data: (NSDictionary *)data{
     NSLog(@"%@", data);
     NSString *status_code = data[@"status_code"];
     if ([status_code intValue] != 0) {
@@ -67,13 +62,16 @@
             //添加分界线，换行
             [ud setObject:[dic objectForKey:key] forKey:key];
         }
+        [ud setObject:self.phoneNumber.text forKey:@"PickNameDisplay"];
         [ud synchronize];
         UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         UITabBarController *vc = [mainStoryboard instantiateInitialViewController];
         [self presentViewController:vc animated:YES completion:nil];
     }
 }
-
+- (void)didReceiveAPIErrorOf: (API *)api data: (int)errorNo{
+    NSLog(@"%d", errorNo);
+}
 /*
 #pragma mark - Navigation
 
