@@ -13,6 +13,9 @@
 		065D11B71C196D1800F0C48C /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 065D11B21C196D1800F0C48C /* RegisterViewController.m */; };
 		065D11B81C196D1800F0C48C /* ValueCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 065D11B41C196D1800F0C48C /* ValueCodeViewController.m */; };
 		065D11BA1C19728B00F0C48C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065D11B91C19728B00F0C48C /* Images.xcassets */; };
+		0663DC0E1C5E59ED00F143D7 /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0663DC0D1C5E59ED00F143D7 /* AddFriendViewController.m */; };
+		0663DC131C5E5B0000F143D7 /* PeopleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0663DC121C5E5B0000F143D7 /* PeopleListViewController.m */; };
+		0663DC161C5E5B3700F143D7 /* FriendListEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0663DC151C5E5B3700F143D7 /* FriendListEntry.m */; };
 		06712FA11C1DE8660067E6CB /* libopenh264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06712F9E1C1DE8660067E6CB /* libopenh264.a */; };
 		06712FA21C1DE8660067E6CB /* libyuv_neon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06712F9F1C1DE8660067E6CB /* libyuv_neon.a */; };
 		06712FA31C1DE8660067E6CB /* libyuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06712FA01C1DE8660067E6CB /* libyuv.a */; };
@@ -46,7 +49,6 @@
 		06A75DE11C5DD1DD006B9C50 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 06A75DD71C5DD1DD006B9C50 /* split.c */; };
 		06A75DE21C5DD1DD006B9C50 /* UIImage+MDQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A75DDA1C5DD1DD006B9C50 /* UIImage+MDQRCode.m */; };
 		06A75DE51C5DD295006B9C50 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A75DE41C5DD295006B9C50 /* QRViewController.m */; };
-		06A75DE81C5DE0C2006B9C50 /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A75DE71C5DE0C2006B9C50 /* AddFriendViewController.m */; };
 		06AC55291C5DCF14000E204A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA31FF218F3FB4C00112C3D /* QuartzCore.framework */; };
 		06AE7CDA1C3FF1E2006B3ACE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AE7CD91C3FF1E2006B3ACE /* CoreTelephony.framework */; };
 		06AE7CDC1C3FF1F0006B3ACE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AE7CDB1C3FF1F0006B3ACE /* SystemConfiguration.framework */; };
@@ -100,6 +102,12 @@
 		065D11B31C196D1800F0C48C /* ValueCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueCodeViewController.h; sourceTree = "<group>"; };
 		065D11B41C196D1800F0C48C /* ValueCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueCodeViewController.m; sourceTree = "<group>"; };
 		065D11B91C19728B00F0C48C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0663DC0C1C5E59ED00F143D7 /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendViewController.h; sourceTree = "<group>"; };
+		0663DC0D1C5E59ED00F143D7 /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendViewController.m; sourceTree = "<group>"; };
+		0663DC111C5E5B0000F143D7 /* PeopleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleListViewController.h; sourceTree = "<group>"; };
+		0663DC121C5E5B0000F143D7 /* PeopleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleListViewController.m; sourceTree = "<group>"; };
+		0663DC141C5E5B3700F143D7 /* FriendListEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListEntry.h; sourceTree = "<group>"; };
+		0663DC151C5E5B3700F143D7 /* FriendListEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListEntry.m; sourceTree = "<group>"; };
 		06712F9E1C1DE8660067E6CB /* libopenh264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopenh264.a; path = "tp-lib/libopenh264.a"; sourceTree = "<group>"; };
 		06712F9F1C1DE8660067E6CB /* libyuv_neon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libyuv_neon.a; path = "tp-lib/libyuv_neon.a"; sourceTree = "<group>"; };
 		06712FA01C1DE8660067E6CB /* libyuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libyuv.a; path = "tp-lib/libyuv.a"; sourceTree = "<group>"; };
@@ -145,8 +153,6 @@
 		06A75DDA1C5DD1DD006B9C50 /* UIImage+MDQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MDQRCode.m"; sourceTree = "<group>"; };
 		06A75DE31C5DD295006B9C50 /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
 		06A75DE41C5DD295006B9C50 /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
-		06A75DE61C5DE0C2006B9C50 /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddFriendViewController.h; path = "../../../../../Downloads/mEye/mEye-master副本/ios/mEye/Main/AddFriendViewController.h"; sourceTree = "<group>"; };
-		06A75DE71C5DE0C2006B9C50 /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddFriendViewController.m; path = "../../../../../Downloads/mEye/mEye-master副本/ios/mEye/Main/AddFriendViewController.m"; sourceTree = "<group>"; };
 		06AC55251C5DCED5000E204A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		06AC55271C5DCEE6000E204A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		06AE7CD91C3FF1E2006B3ACE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -325,6 +331,12 @@
 		06CDC1381C198C7C003D3F5C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				0663DC0C1C5E59ED00F143D7 /* AddFriendViewController.h */,
+				0663DC0D1C5E59ED00F143D7 /* AddFriendViewController.m */,
+				0663DC111C5E5B0000F143D7 /* PeopleListViewController.h */,
+				0663DC121C5E5B0000F143D7 /* PeopleListViewController.m */,
+				0663DC141C5E5B3700F143D7 /* FriendListEntry.h */,
+				0663DC151C5E5B3700F143D7 /* FriendListEntry.m */,
 				06CEE4341C5DF45600D236EF /* ScanViewController.h */,
 				06CEE4351C5DF45600D236EF /* ScanViewController.m */,
 				06F2E9BF1C5BC34200B0467F /* AboutmEyeViewController.h */,
@@ -336,8 +348,6 @@
 				06F2E9BD1C5BC2EB00B0467F /* SettingTableViewController.m */,
 				06826B011C20545D006C0284 /* FrdTableViewController.h */,
 				06826B021C20545D006C0284 /* FrdTableViewController.m */,
-				06A75DE61C5DE0C2006B9C50 /* AddFriendViewController.h */,
-				06A75DE71C5DE0C2006B9C50 /* AddFriendViewController.m */,
 				06CEE4371C5E070900D236EF /* findFrdViewController.h */,
 				06CEE4381C5E070900D236EF /* findFrdViewController.m */,
 				068964451C5D23FC00D96BEA /* FrdTableViewCell.h */,
@@ -554,6 +564,7 @@
 				06A75DE01C5DD1DD006B9C50 /* rscode.c in Sources */,
 				06826B001C204A93006C0284 /* MainTabBarController.m in Sources */,
 				3AF0581516F050780046B835 /* main.mm in Sources */,
+				0663DC0E1C5E59ED00F143D7 /* AddFriendViewController.m in Sources */,
 				06A75DDF1C5DD1DD006B9C50 /* qrspec.c in Sources */,
 				3AF0581916F050780046B835 /* ipjsuaAppDelegate.m in Sources */,
 				068964471C5D23FC00D96BEA /* FrdTableViewCell.m in Sources */,
@@ -567,10 +578,11 @@
 				3ADCCD2F172E40120007BE8E /* pjsua_app_config.c in Sources */,
 				06CDC1431C19A14E003D3F5C /* CallingViewController.m in Sources */,
 				06F2E9C11C5BC34200B0467F /* AboutmEyeViewController.m in Sources */,
-				06A75DE81C5DE0C2006B9C50 /* AddFriendViewController.m in Sources */,
+				0663DC161C5E5B3700F143D7 /* FriendListEntry.m in Sources */,
 				065D11A81C196BC200F0C48C /* API.m in Sources */,
 				06CEE4361C5DF45600D236EF /* ScanViewController.m in Sources */,
 				06A75DDB1C5DD1DD006B9C50 /* bitstream.c in Sources */,
+				0663DC131C5E5B0000F143D7 /* PeopleListViewController.m in Sources */,
 				06A75DE21C5DD1DD006B9C50 /* UIImage+MDQRCode.m in Sources */,
 				065D11B51C196D1800F0C48C /* FirstViewController.m in Sources */,
 				06A75DDC1C5DD1DD006B9C50 /* mask.c in Sources */,
