@@ -138,6 +138,7 @@ static void pjsuaOnAppConfigCb(pjsua_app_config *cfg)
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];

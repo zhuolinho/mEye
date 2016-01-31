@@ -51,6 +51,7 @@
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:data[@"status_text"] message:nil delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
         [alert show];
     } else {
+        NSLog(@"%@", data);
         NSDictionary *dic = data[@"data"];
         NSArray *keys= [dic allKeys];
         NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
@@ -62,7 +63,7 @@
             //添加分界线，换行
             [ud setObject:[dic objectForKey:key] forKey:key];
         }
-        [ud setObject:self.phoneNumber.text forKey:@"PickNameDisplay"];
+//        [ud setObject:self.phoneNumber.text forKey:@"PickNameDisplay"];
         [ud synchronize];
         UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         UITabBarController *vc = [mainStoryboard instantiateInitialViewController];

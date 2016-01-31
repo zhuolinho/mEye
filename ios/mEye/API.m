@@ -20,6 +20,8 @@ static NSMutableDictionary *picDic;
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     [request setValue:[ud objectForKey:@"deviceId"] forHTTPHeaderField:@"uuid"];
     [request setValue:[ud objectForKey:@"token"] forHTTPHeaderField:@"token"];
+    [request setValue:[ud objectForKey:@"userId"] forHTTPHeaderField:@"userId"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     NSData *data = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:nil];
     request.HTTPBody = data;
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
@@ -66,6 +68,18 @@ static NSMutableDictionary *picDic;
 
 - (void)checkCode:(NSString *)mobileNo password:(NSString *)password code:(NSString *)code {
     [self post:@"User/Verificationcode/Check.action" dic:@{@"mobileNo": mobileNo, @"password": password, @"code": code, @"checkType": @"0", @"devType": @"2"}];
+}
+
+- (void)getFriendList{
+    [self post:@"Query/FriendsInfo/List.action" dic:@{@"statementId": @"yarlung.queryFriendinfo"}];
+}
+
+- (void)searchFriendByPhone:(NSString*) mobileNo{
+    [self post:@"Query/FriendsInfo/List.action" dic:@{@"statementId":@"yarlung.searchFriend",@"parameters":@{@"userName":mobileNo}}];
+}
+
+- (void)findUser:(NSString *)userId {
+    [self post:@"Persist/User/Load.action" dic:@{@"userId": userId}];
 }
 
 + (UIImage *)getPicByKey:(NSString *)key {

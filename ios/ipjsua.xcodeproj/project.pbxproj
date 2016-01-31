@@ -36,6 +36,18 @@
 		0681A0EC1C1DEF8300BCD6AE /* libg7221codec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0681A0DA1C1DEF8300BCD6AE /* libg7221codec.a */; };
 		06826B001C204A93006C0284 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06826AFF1C204A93006C0284 /* MainTabBarController.m */; };
 		06826B031C20545D006C0284 /* FrdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06826B021C20545D006C0284 /* FrdTableViewController.m */; };
+		068964471C5D23FC00D96BEA /* FrdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 068964461C5D23FC00D96BEA /* FrdTableViewCell.m */; };
+		06A75DDB1C5DD1DD006B9C50 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 06A75DCB1C5DD1DD006B9C50 /* bitstream.c */; };
+		06A75DDC1C5DD1DD006B9C50 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = 06A75DCD1C5DD1DD006B9C50 /* mask.c */; };
+		06A75DDD1C5DD1DD006B9C50 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = 06A75DCF1C5DD1DD006B9C50 /* qrencode.c */; };
+		06A75DDE1C5DD1DD006B9C50 /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = 06A75DD11C5DD1DD006B9C50 /* qrinput.c */; };
+		06A75DDF1C5DD1DD006B9C50 /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = 06A75DD31C5DD1DD006B9C50 /* qrspec.c */; };
+		06A75DE01C5DD1DD006B9C50 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = 06A75DD51C5DD1DD006B9C50 /* rscode.c */; };
+		06A75DE11C5DD1DD006B9C50 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 06A75DD71C5DD1DD006B9C50 /* split.c */; };
+		06A75DE21C5DD1DD006B9C50 /* UIImage+MDQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A75DDA1C5DD1DD006B9C50 /* UIImage+MDQRCode.m */; };
+		06A75DE51C5DD295006B9C50 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A75DE41C5DD295006B9C50 /* QRViewController.m */; };
+		06A75DE81C5DE0C2006B9C50 /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A75DE71C5DE0C2006B9C50 /* AddFriendViewController.m */; };
+		06AC55291C5DCF14000E204A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA31FF218F3FB4C00112C3D /* QuartzCore.framework */; };
 		06AE7CDA1C3FF1E2006B3ACE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AE7CD91C3FF1E2006B3ACE /* CoreTelephony.framework */; };
 		06AE7CDC1C3FF1F0006B3ACE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AE7CDB1C3FF1F0006B3ACE /* SystemConfiguration.framework */; };
 		06AE7CDE1C3FF217006B3ACE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AE7CDD1C3FF217006B3ACE /* Security.framework */; };
@@ -46,7 +58,11 @@
 		06CDC13A1C198C92003D3F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CDC1391C198C92003D3F5C /* Main.storyboard */; };
 		06CDC13D1C19A045003D3F5C /* Call.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CDC13C1C19A045003D3F5C /* Call.storyboard */; };
 		06CDC1431C19A14E003D3F5C /* CallingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CDC1421C19A14E003D3F5C /* CallingViewController.m */; };
+		06CEE4361C5DF45600D236EF /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CEE4351C5DF45600D236EF /* ScanViewController.m */; };
+		06CEE4391C5E070900D236EF /* findFrdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CEE4381C5E070900D236EF /* findFrdViewController.m */; };
 		06F2E9891C5B88D400B0467F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F2E9881C5B88D400B0467F /* LoginViewController.m */; };
+		06F2E9BE1C5BC2EB00B0467F /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F2E9BD1C5BC2EB00B0467F /* SettingTableViewController.m */; };
+		06F2E9C11C5BC34200B0467F /* AboutmEyeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F2E9C01C5BC34200B0467F /* AboutmEyeViewController.m */; };
 		3AA31FF618F3FB4C00112C3D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA31FE918F3FB4C00112C3D /* AudioToolbox.framework */; };
 		3AA31FF718F3FB4C00112C3D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA31FEA18F3FB4C00112C3D /* AVFoundation.framework */; };
 		3AA31FF818F3FB4C00112C3D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA31FEB18F3FB4C00112C3D /* CFNetwork.framework */; };
@@ -56,7 +72,6 @@
 		3AA31FFC18F3FB4C00112C3D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA31FEF18F3FB4C00112C3D /* CoreMedia.framework */; };
 		3AA31FFD18F3FB4C00112C3D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA31FF018F3FB4C00112C3D /* CoreVideo.framework */; };
 		3AA31FFE18F3FB4C00112C3D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA31FF118F3FB4C00112C3D /* OpenGLES.framework */; };
-		3AA31FFF18F3FB4C00112C3D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA31FF218F3FB4C00112C3D /* QuartzCore.framework */; };
 		3AA3200018F3FB4C00112C3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA31FF318F3FB4C00112C3D /* Foundation.framework */; };
 		3AA3200118F3FB4C00112C3D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA31FF418F3FB4C00112C3D /* CoreGraphics.framework */; };
 		3AA3200218F3FB4C00112C3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA31FF518F3FB4C00112C3D /* UIKit.framework */; };
@@ -110,6 +125,30 @@
 		06826AFF1C204A93006C0284 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		06826B011C20545D006C0284 /* FrdTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrdTableViewController.h; sourceTree = "<group>"; };
 		06826B021C20545D006C0284 /* FrdTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrdTableViewController.m; sourceTree = "<group>"; };
+		068964451C5D23FC00D96BEA /* FrdTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrdTableViewCell.h; sourceTree = "<group>"; };
+		068964461C5D23FC00D96BEA /* FrdTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrdTableViewCell.m; sourceTree = "<group>"; };
+		06A75DCB1C5DD1DD006B9C50 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		06A75DCC1C5DD1DD006B9C50 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		06A75DCD1C5DD1DD006B9C50 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		06A75DCE1C5DD1DD006B9C50 /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		06A75DCF1C5DD1DD006B9C50 /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		06A75DD01C5DD1DD006B9C50 /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		06A75DD11C5DD1DD006B9C50 /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		06A75DD21C5DD1DD006B9C50 /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		06A75DD31C5DD1DD006B9C50 /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		06A75DD41C5DD1DD006B9C50 /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		06A75DD51C5DD1DD006B9C50 /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		06A75DD61C5DD1DD006B9C50 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		06A75DD71C5DD1DD006B9C50 /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		06A75DD81C5DD1DD006B9C50 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		06A75DD91C5DD1DD006B9C50 /* UIImage+MDQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MDQRCode.h"; sourceTree = "<group>"; };
+		06A75DDA1C5DD1DD006B9C50 /* UIImage+MDQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MDQRCode.m"; sourceTree = "<group>"; };
+		06A75DE31C5DD295006B9C50 /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
+		06A75DE41C5DD295006B9C50 /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
+		06A75DE61C5DE0C2006B9C50 /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddFriendViewController.h; path = "../../../../../Downloads/mEye/mEye-master副本/ios/mEye/Main/AddFriendViewController.h"; sourceTree = "<group>"; };
+		06A75DE71C5DE0C2006B9C50 /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddFriendViewController.m; path = "../../../../../Downloads/mEye/mEye-master副本/ios/mEye/Main/AddFriendViewController.m"; sourceTree = "<group>"; };
+		06AC55251C5DCED5000E204A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		06AC55271C5DCEE6000E204A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		06AE7CD91C3FF1E2006B3ACE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		06AE7CDB1C3FF1F0006B3ACE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		06AE7CDD1C3FF217006B3ACE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -122,8 +161,16 @@
 		06CDC13C1C19A045003D3F5C /* Call.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Call.storyboard; sourceTree = "<group>"; };
 		06CDC1411C19A14E003D3F5C /* CallingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallingViewController.h; sourceTree = "<group>"; };
 		06CDC1421C19A14E003D3F5C /* CallingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallingViewController.m; sourceTree = "<group>"; };
+		06CEE4341C5DF45600D236EF /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		06CEE4351C5DF45600D236EF /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		06CEE4371C5E070900D236EF /* findFrdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = findFrdViewController.h; sourceTree = "<group>"; };
+		06CEE4381C5E070900D236EF /* findFrdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = findFrdViewController.m; sourceTree = "<group>"; };
 		06F2E9871C5B88D400B0467F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		06F2E9881C5B88D400B0467F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		06F2E9BC1C5BC2EB00B0467F /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		06F2E9BD1C5BC2EB00B0467F /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+		06F2E9BF1C5BC34200B0467F /* AboutmEyeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutmEyeViewController.h; sourceTree = "<group>"; };
+		06F2E9C01C5BC34200B0467F /* AboutmEyeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutmEyeViewController.m; sourceTree = "<group>"; };
 		3AA31FE918F3FB4C00112C3D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		3AA31FEA18F3FB4C00112C3D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3AA31FEB18F3FB4C00112C3D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -160,6 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06AC55291C5DCF14000E204A /* QuartzCore.framework in Frameworks */,
 				06AE7CE01C3FF225006B3ACE /* libz.tbd in Frameworks */,
 				06AE7CDE1C3FF217006B3ACE /* Security.framework in Frameworks */,
 				3AA3200118F3FB4C00112C3D /* CoreGraphics.framework in Frameworks */,
@@ -198,7 +246,6 @@
 				0681A0E01C1DEF8300BCD6AE /* libpjsip-ua.a in Frameworks */,
 				3AA31FFA18F3FB4C00112C3D /* CoreFoundation.framework in Frameworks */,
 				3AA31FFC18F3FB4C00112C3D /* CoreMedia.framework in Frameworks */,
-				3AA31FFF18F3FB4C00112C3D /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +280,37 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		06A75DC91C5DD1DD006B9C50 /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				06A75DCA1C5DD1DD006B9C50 /* libqrencode */,
+				06A75DD91C5DD1DD006B9C50 /* UIImage+MDQRCode.h */,
+				06A75DDA1C5DD1DD006B9C50 /* UIImage+MDQRCode.m */,
+			);
+			path = QR;
+			sourceTree = "<group>";
+		};
+		06A75DCA1C5DD1DD006B9C50 /* libqrencode */ = {
+			isa = PBXGroup;
+			children = (
+				06A75DCB1C5DD1DD006B9C50 /* bitstream.c */,
+				06A75DCC1C5DD1DD006B9C50 /* bitstream.h */,
+				06A75DCD1C5DD1DD006B9C50 /* mask.c */,
+				06A75DCE1C5DD1DD006B9C50 /* mask.h */,
+				06A75DCF1C5DD1DD006B9C50 /* qrencode.c */,
+				06A75DD01C5DD1DD006B9C50 /* qrencode.h */,
+				06A75DD11C5DD1DD006B9C50 /* qrinput.c */,
+				06A75DD21C5DD1DD006B9C50 /* qrinput.h */,
+				06A75DD31C5DD1DD006B9C50 /* qrspec.c */,
+				06A75DD41C5DD1DD006B9C50 /* qrspec.h */,
+				06A75DD51C5DD1DD006B9C50 /* rscode.c */,
+				06A75DD61C5DD1DD006B9C50 /* rscode.h */,
+				06A75DD71C5DD1DD006B9C50 /* split.c */,
+				06A75DD81C5DD1DD006B9C50 /* split.h */,
+			);
+			path = libqrencode;
+			sourceTree = "<group>";
+		};
 		06B341631C3FF006004E9F3D /* jpush */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,11 +325,25 @@
 		06CDC1381C198C7C003D3F5C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				06CEE4341C5DF45600D236EF /* ScanViewController.h */,
+				06CEE4351C5DF45600D236EF /* ScanViewController.m */,
+				06F2E9BF1C5BC34200B0467F /* AboutmEyeViewController.h */,
+				06F2E9C01C5BC34200B0467F /* AboutmEyeViewController.m */,
 				06CDC1391C198C92003D3F5C /* Main.storyboard */,
 				06826AFE1C204A93006C0284 /* MainTabBarController.h */,
 				06826AFF1C204A93006C0284 /* MainTabBarController.m */,
+				06F2E9BC1C5BC2EB00B0467F /* SettingTableViewController.h */,
+				06F2E9BD1C5BC2EB00B0467F /* SettingTableViewController.m */,
 				06826B011C20545D006C0284 /* FrdTableViewController.h */,
 				06826B021C20545D006C0284 /* FrdTableViewController.m */,
+				06A75DE61C5DE0C2006B9C50 /* AddFriendViewController.h */,
+				06A75DE71C5DE0C2006B9C50 /* AddFriendViewController.m */,
+				06CEE4371C5E070900D236EF /* findFrdViewController.h */,
+				06CEE4381C5E070900D236EF /* findFrdViewController.m */,
+				068964451C5D23FC00D96BEA /* FrdTableViewCell.h */,
+				068964461C5D23FC00D96BEA /* FrdTableViewCell.m */,
+				06A75DE31C5DD295006B9C50 /* QRViewController.h */,
+				06A75DE41C5DD295006B9C50 /* QRViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -281,6 +373,7 @@
 		3AF057F916F050770046B835 = {
 			isa = PBXGroup;
 			children = (
+				06A75DC91C5DD1DD006B9C50 /* QR */,
 				06B341631C3FF006004E9F3D /* jpush */,
 				065D11A51C196BC200F0C48C /* mEye */,
 				3AF0580E16F050770046B835 /* ipjsua */,
@@ -301,6 +394,8 @@
 		3AF0580716F050770046B835 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				06AC55271C5DCEE6000E204A /* libc++.tbd */,
+				06AC55251C5DCED5000E204A /* libiconv.tbd */,
 				06AE7CDF1C3FF225006B3ACE /* libz.tbd */,
 				06AE7CDD1C3FF217006B3ACE /* Security.framework */,
 				06AE7CDB1C3FF1F0006B3ACE /* SystemConfiguration.framework */,
@@ -456,18 +551,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				065D11B71C196D1800F0C48C /* RegisterViewController.m in Sources */,
+				06A75DE01C5DD1DD006B9C50 /* rscode.c in Sources */,
 				06826B001C204A93006C0284 /* MainTabBarController.m in Sources */,
 				3AF0581516F050780046B835 /* main.mm in Sources */,
+				06A75DDF1C5DD1DD006B9C50 /* qrspec.c in Sources */,
 				3AF0581916F050780046B835 /* ipjsuaAppDelegate.m in Sources */,
+				068964471C5D23FC00D96BEA /* FrdTableViewCell.m in Sources */,
 				06826B031C20545D006C0284 /* FrdTableViewController.m in Sources */,
+				06CEE4391C5E070900D236EF /* findFrdViewController.m in Sources */,
+				06A75DE11C5DD1DD006B9C50 /* split.c in Sources */,
 				065D11B81C196D1800F0C48C /* ValueCodeViewController.m in Sources */,
 				3ADCCD2D172E40120007BE8E /* pjsua_app_cli.c in Sources */,
 				3ADCCD2E172E40120007BE8E /* pjsua_app_common.c in Sources */,
+				06A75DDE1C5DD1DD006B9C50 /* qrinput.c in Sources */,
 				3ADCCD2F172E40120007BE8E /* pjsua_app_config.c in Sources */,
 				06CDC1431C19A14E003D3F5C /* CallingViewController.m in Sources */,
+				06F2E9C11C5BC34200B0467F /* AboutmEyeViewController.m in Sources */,
+				06A75DE81C5DE0C2006B9C50 /* AddFriendViewController.m in Sources */,
 				065D11A81C196BC200F0C48C /* API.m in Sources */,
+				06CEE4361C5DF45600D236EF /* ScanViewController.m in Sources */,
+				06A75DDB1C5DD1DD006B9C50 /* bitstream.c in Sources */,
+				06A75DE21C5DD1DD006B9C50 /* UIImage+MDQRCode.m in Sources */,
 				065D11B51C196D1800F0C48C /* FirstViewController.m in Sources */,
+				06A75DDC1C5DD1DD006B9C50 /* mask.c in Sources */,
+				06F2E9BE1C5BC2EB00B0467F /* SettingTableViewController.m in Sources */,
 				3ADCCD30172E40120007BE8E /* pjsua_app_legacy.c in Sources */,
+				06A75DDD1C5DD1DD006B9C50 /* qrencode.c in Sources */,
+				06A75DE51C5DD295006B9C50 /* QRViewController.m in Sources */,
 				3ADCCD31172E40120007BE8E /* pjsua_app.c in Sources */,
 				06F2E9891C5B88D400B0467F /* LoginViewController.m in Sources */,
 			);

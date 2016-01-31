@@ -41,6 +41,7 @@ void ui_add_account(pjsua_transport_config *rtp_cfg, char *registrar, char *id, 
         pj_thread_register(NULL, desc, &thread);
     }
     ui_add_account(&app_config.rtp_cfg, userId, registrar, [userName UTF8String], [password UTF8String]);
+    [self.tabBar setTintColor:[UIColor colorWithRed:59 / 255.0 green:186 / 255.0 blue:201 / 255.0 alpha:1]];
 }
 
 - (void)didReceiveMemoryWarning {

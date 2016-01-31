@@ -17,6 +17,7 @@ void vid_handle_menu(char *menuin);
 
 @interface CallingViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *answerButton;
+@property (weak, nonatomic) IBOutlet UIButton *huangupButton;
 
 @end
 
@@ -36,6 +37,8 @@ void vid_handle_menu(char *menuin);
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _huangupButton.layer.cornerRadius = 30;
+    _huangupButton.layer.masksToBounds = YES;
     // Do any additional setup after loading the view.
 }
 

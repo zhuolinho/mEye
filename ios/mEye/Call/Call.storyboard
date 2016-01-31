@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PSR-Cn-fvs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PSR-Cn-fvs">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--Calling View Controller-->
@@ -17,24 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="Kij-Am-7tk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hgm-NH-ru7">
                                 <rect key="frame" x="0.0" y="28" width="320" height="428"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lde-rE-yVm">
-                                <rect key="frame" x="132" y="518" width="56" height="30"/>
-                                <state key="normal" title="hang up"/>
-                                <connections>
-                                    <action selector="hangup:" destination="PSR-Cn-fvs" eventType="touchUpInside" id="bun-ZE-TG2"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KGf-qF-AiY">
-                                <rect key="frame" x="0.0" y="464" width="124" height="104"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="124" id="Ret-K3-Yp0"/>
-                                    <constraint firstAttribute="height" constant="104" id="voE-WV-FU1"/>
-                                </constraints>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ck-1s-4KM">
                                 <rect key="frame" x="251" y="465" width="49" height="30"/>
@@ -43,17 +31,24 @@
                                     <action selector="answerButtonClick:" destination="PSR-Cn-fvs" eventType="touchUpInside" id="cgb-2z-DtI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lde-rE-yVm">
+                                <rect key="frame" x="130" y="500" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.18039215689999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="hangup"/>
+                                <connections>
+                                    <action selector="hangup:" destination="PSR-Cn-fvs" eventType="touchUpInside" id="bun-ZE-TG2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Hgm-NH-ru7" firstAttribute="top" secondItem="oZ2-Fz-Sjc" secondAttribute="bottom" constant="8" id="Frg-ya-xGU"/>
                             <constraint firstItem="Weg-30-avd" firstAttribute="top" secondItem="lde-rE-yVm" secondAttribute="bottom" constant="20" id="kaP-jy-Cck"/>
-                            <constraint firstItem="Weg-30-avd" firstAttribute="top" secondItem="KGf-qF-AiY" secondAttribute="bottom" id="tL7-1P-7tg"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerButton" destination="9ck-1s-4KM" id="uD4-ZN-4UT"/>
-                        <outlet property="myView" destination="KGf-qF-AiY" id="r7T-84-222"/>
+                        <outlet property="huangupButton" destination="lde-rE-yVm" id="zOs-dv-h9O"/>
                         <outlet property="videoView" destination="Hgm-NH-ru7" id="z4h-Ny-VZI"/>
                     </connections>
                 </viewController>
@@ -62,4 +57,8 @@
             <point key="canvasLocation" x="260" y="513"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hangup" width="50" height="50"/>
+        <image name="welcome" width="480" height="800"/>
+    </resources>
 </document>

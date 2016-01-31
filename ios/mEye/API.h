@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #define HOST @"http://120.24.255.55:9000"
+#define IMGHOST @"http://120.24.255.55:9000/Yarlung"
 
 @protocol APIProtocol;
 
@@ -20,6 +21,9 @@
 - (void)login:(NSString *)username password:(NSString *)password;
 - (void)registerAccount:(NSString *)username;
 - (void)checkCode:(NSString *)mobileNo password:(NSString *)password code:(NSString *)code;
+- (void)getFriendList;
+- (void)searchFriendByPhone:(NSString*) mobileNo;
+- (void)findUser:(NSString *)userId;
 
 //- (void)post:(NSString *)action dic:(NSDictionary *)dic;
 + (UIImage *)getPicByKey:(NSString *)key;
